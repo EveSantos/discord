@@ -6,7 +6,6 @@ import { Grid } from './styles';
 const Layout: React.FC = () => { 
     return(
         <Grid>
-
             <ServerList/>
         </Grid>
 

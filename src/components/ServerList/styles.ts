@@ -1,27 +1,26 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`   
-    grid-area: SL; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+export const Container = styled.div`
+  grid-area: SL;
 
-    background-color: var(--tertiary)
-    padding: 11px 0;
-    
-    max-heigth: 100vh;  
-    overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-    ::-webkit-scrollbar{
-        display: none;
-    }
- `;
+  background-color: var(--tertiary);
+  padding: 11px 0;
 
-export const Separator = styled.div`   
-    
-    width: 32px;
-    border-bottom: 2px solid var(--quartenary);
+  max-height: 100vh;
+  overflow-y: scroll;
 
-    margin-bottom: 8px;
- 
- `;
+  ::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
+export const Separator = styled.div`
+  width: 32px;
+  border-bottom: 2px solid var(--quaternary);
+
+  margin-bottom: 8px;
+`;

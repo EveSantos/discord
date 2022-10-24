@@ -7,7 +7,7 @@ import {Button } from "./styles";
 export interface Props{
     selected?: boolean;
     isHome?: boolean;
-    hasNotification?: boolean;
+    hasNotifications?: boolean;
     mentions?: number;
 }
 
@@ -15,16 +15,16 @@ export interface Props{
 const ServerButton: React.FC<Props> = ({
     selected,
     isHome,
-    hasNotification,
+    hasNotifications,
     mentions,
 }) => {
 
     return(
         <Button
         isHome = {isHome}
-        hasNotification = {hasNotification}
+        hasNotifications = {hasNotifications}
         mentions = {mentions}
-        className = {selected ? 'active' : ''}
+        className = {selected ? 'active' : 'none'}
         >
            {isHome && <img src={Logo} alt="Logo" />} 
         </Button>
